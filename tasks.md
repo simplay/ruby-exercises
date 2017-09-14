@@ -8,7 +8,9 @@ numbers = (1..10).to_a
 Use so called `higher order functions` to solve the following tasks:
 
 **a)** Print each value of `numbers`.
+
 **b)** Select all even numbers and multiply the resulting numbers by 3.
+
 **c)** compute the sum of its squared numbers, i.e. `1^2 + 2^2 + 3^2 + ... + 10^2`
 
 **Bonus**: Write for each task (a-c) a function that accepts an array.
@@ -30,7 +32,7 @@ These numbers are used as an input of the function `#compute_average`.
 The resulting average value should be displayed to the user.
 Note: The user input is a string (i.e. the whitespace separated numbers). Transform them to an array of numbers using `String`'s the `split` method.
 
-Bonus: The program shouldn't terminate after its first run. It rather should ask the user whether or not he wants to continue.
+**Bonus**: The program shouldn't terminate after its first run. It rather should ask the user whether or not he wants to continue.
 In case he wants to continue, repeat the program-flow, otherwise terminate the execution.
 
 **f)** In this task you are going to solve some tasks that address text matching. To solve this task, please use the following array of names:
@@ -62,6 +64,8 @@ Hint 1: Make use of `group_by`, `map` to compute the word frequency (i.e. the nu
 
 Example: `a man in a house` will find the following frequencies:
 `[["a", 2], ["man", 1], ["in", 1], ["house", 1]]` with the top word "a", which occurs twice.
+
+Implement the missing code in the file `ex_array_h.rb`
 
 ```ruby
 random_text = File.read("random_text.txt")
