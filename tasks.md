@@ -5,15 +5,17 @@ Given are the numbers from 1 to 10, i.e.
 numbers = (1..10).to_a
 ```
 
-Use so called `higher order functions` to solve the following tasks:
+Use methods like `each` and `map` to solve the following tasks:
 
 **a)** Print each value of `numbers`.
 
-**b)** Select all even numbers and multiply the resulting numbers by 3.
+**b)** Print all even numbers and multiply the resulting numbers by 3.
 
-**c)** compute the sum of its squared numbers, i.e. `1^2 + 2^2 + 3^2 + ... + 10^2`
+**c)** Print the sum of its squared numbers, i.e. `1^2 + 2^2 + 3^2 + ... + 10^2`
 
 **Bonus**: Write for each task (a-c) a function that accepts an array.
+
+Example: You should be able to call a function `tasks_a(numbers)` to solve task a).
 
 **d)** Implement the following function:
 ```ruby
@@ -30,7 +32,6 @@ end
 **e)** Write a ruby script that asks a user to enter some whitespace separated numbers.
 These numbers are used as an input of the function `#compute_average`.
 The resulting average value should be displayed to the user.
-Note: The user input is a string (i.e. the whitespace separated numbers). Transform them to an array of numbers using `String`'s the `split` method.
 
 **Bonus**: The program shouldn't terminate after its first run. It rather should ask the user whether or not he wants to continue.
 In case he wants to continue, repeat the program-flow, otherwise terminate the execution.
@@ -50,13 +51,13 @@ names = [
 
 Write a method that finds all names that start with a certain letter.
 
-E.g. `find_by_letter(letter: 's')` should return ["Simon", "Sandra"] but
-`find_by_letter(letter: 'x')` should return an empty array.
+E.g. `find_by_letter(names: names, letter: 's')` should return `["Simon", "Sandra"]` but
+`find_by_letter(names: names, letter: 'x')` should return an empty array.
 
 **g)** Generalize this function to return all names that match a certain substring
 
-E.g. `find_by_pattern(pattern: "sa")` should return ["Sandra"] and
-`find_by_pattern(pattern: "en")` should return ["Kristen"]
+E.g. `find_by_pattern(names: names, pattern: "sa")` should return `["Sandra"]` and
+`find_by_pattern(names: names, pattern: "en")` should return `["Kristen"]`
 
 **h)** Count occurrence of every word in the given random text. Print the top 5 words (sorted in a descending order).
 
