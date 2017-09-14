@@ -68,7 +68,9 @@ random_text = File.read("random_text.txt")
 words = random_text.join
 # your implementation goes here
 ```
-Bonus: Save the resulting top-5 results in a file.
+**Bonus**: Save the resulting top-5 results in a text file using ruby.
+
+Hint: Make use of the class `File`.
 
 **i)** In this task you are going to implement a function that appends an article to a list of articles. Articles have a name and price.
 See the code below and address / solve the TODOs.
